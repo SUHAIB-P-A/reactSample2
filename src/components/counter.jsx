@@ -1,10 +1,11 @@
 
 function Counter(params) {
-  return (
-    <div>
-          <h1>counter: {params.count}</h1>
-    </div>
-  )
+    const {title, count} = params;
+    return (
+        <div>
+            <h1>{title}: {count}</h1>
+        </div>
+    )
 }
 
 export default Counter;
