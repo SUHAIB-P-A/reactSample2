@@ -1,7 +1,10 @@
+import { useState } from "react";
+
 function App() {
-  let count = 0;
+  const [count, setCount] = useState(0);
+
   const addCount = () => {
-    count = count + 1;
+    setCount(count +1);
     console.log(count);
   }
   return (
