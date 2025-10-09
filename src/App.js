@@ -1,6 +1,6 @@
 function App() {
   let count = 0;
-  function addCount() {
+  const addCount = () => {
     count = count + 1;
     console.log(count);
   }
