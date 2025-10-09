@@ -11,13 +11,17 @@ function App() {
   const addCount = () => {
     setCount(count + 1);
   }
+
+  // spread operator example
+  let obj = { title: "1st Counter", count };
   return (
     <div>
       <button onClick={addCount}>
         Add Count
       </button>
-      <Counter title = {"1st Counter"} count={count} />
-      <Counter title = {"2nd Counter"} count={count} />
+      {/* use of spread operator ({...obj}) */}
+      <Counter {...obj} />
+      <Counter title={"2nd Counter"} count={count} />
     </div>
   );
 }

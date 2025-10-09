@@ -1,4 +1,4 @@
-
+//               destructuring props 
 function Counter({ title, count }) {
     return (
         <div>
