@@ -1,6 +1,5 @@
 
-function Counter(params) {
-    const {title, count} = params;
+function Counter({ title, count }) {
     return (
         <div>
             <h1>{title}: {count}</h1>
