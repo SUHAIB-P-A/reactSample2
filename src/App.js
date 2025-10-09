@@ -12,8 +12,8 @@ function App() {
     setCount(count + 1);
   }
 
-  // spread operator example
-  let obj = { title: "1st Counter", count };
+  // spread operator example              // rest operator example
+  let obj = { title: "1st Counter", count,place: "India" };
   return (
     <div>
       <button onClick={addCount}>

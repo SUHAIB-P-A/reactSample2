@@ -1,8 +1,10 @@
 //               destructuring props 
-function Counter({ title, count }) {
+//                        use of rest operator
+function Counter({ title, ...obj }) {
     return (
         <div>
-            <h1>{title}: {count}</h1>
+            {/*value get form the rest operator {obj.count} */}
+            <h1>{title}: {obj.count}</h1>
         </div>
     )
 }
