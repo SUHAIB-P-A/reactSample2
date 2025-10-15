@@ -28,9 +28,10 @@ function App() {
 
       {/* use of map helper */}
       {
-        emp.map((emp) => {
-          return (<Employee name={emp.name} age={emp.age} />);
-        })
+        emp.map((emp, index) =>
+          /* use of spread operator  */
+          (<Employee key={index} {...emp} />)
+        )
       }
     </div>
   );
